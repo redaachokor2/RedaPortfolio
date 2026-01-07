@@ -93,6 +93,8 @@
 	    nav:false,
 	    autoplayHoverPause: false,
 	    items: 1,
+		 touchDrag: false,   // fixes mobile scroll
+         pullDrag: false,    // fixes mobile scroll
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
