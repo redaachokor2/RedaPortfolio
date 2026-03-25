@@ -17,14 +17,21 @@
   });
 
 
-	var fullHeight = function() {
 
-		$('.js-fullheight').css('height', $(window).height());
+
+	var fullHeight = function() {
+        if (window,innerWidth > 768){
+			$('.js-fullheight').css('height', $(window).height());
+		} else {
+			$('.js-fullheight').css('height', 'auto');
+		}
+	};
+		/*$('.js-fullheight').css('height', $(window).height());
 		$(window).resize(function(){
 			$('.js-fullheight').css('height', $(window).height());
 		});
 
-	};
+	};*/
 	fullHeight();
 
 	// loader
@@ -38,7 +45,9 @@
 	loader();
 
 	// Scrollax
-   $.Scrollax();
+	if (window.innerWidth > 768){
+	    $.Scrollax();
+	}
 
 
 

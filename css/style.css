@@ -8429,17 +8429,16 @@ h1, h2, h3, h4, h5,
         background: #b3b3b3; }
 /*added to fix scrolling problem on phone*/
 @media (max-width: 768px) {
-  .home-slider {
-    touch-action: pan-y;
-  }
-
-@media (max-width: 768px) {
-  .owl-carousel.home-slider,
-  .owl-carousel.home-slider .slider-item,
-  .owl-carousel.home-slider .slider-text {
-    height: auto;
-    min-height: 100svh;
-  }
+.hero,
+.home-slider,
+.slider-item,
+.slider-text,
+.js-fullheight {
+ height: auto !important;
+ min-height: 100vh;
+}
+body{
+  overflow-x: hidden;
 }
 }
 /**/
