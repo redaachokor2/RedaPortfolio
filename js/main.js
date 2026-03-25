@@ -20,7 +20,7 @@
 
 
 	var fullHeight = function() {
-        if (window,innerWidth > 768){
+        if (window.innerWidth > 768){
 			$('.js-fullheight').css('height', $(window).height());
 		} else {
 			$('.js-fullheight').css('height', 'auto');
@@ -102,8 +102,8 @@
 	    nav:false,
 	    autoplayHoverPause: false,
 	    items: 1,
-		 touchDrag: false,   // fixes mobile scroll
-         pullDrag: false,    // fixes mobile scroll
+		 touchDrag: true,   // fixes mobile scroll
+         pullDrag: true,    // fixes mobile scroll
 	    navText : ["<span class='ion-md-arrow-back'></span>","<span class='ion-chevron-right'></span>"],
 	    responsive:{
 	      0:{
